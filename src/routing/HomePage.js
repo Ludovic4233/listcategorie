@@ -1,11 +1,16 @@
-const HomePage = () => {
+import { Link } from 'react-router-dom';
+
+const HomePage = ({ categories }) => {
+    
     return (
         <>
-            <h1>Liste Categories</h1>
+            <h1>Liste Catégories</h1>
             <ul>
-                <li>Sport</li>
-                <li>film</li>
-                <li>voiture</li>
+                {categories.map(
+                    (categorie) => {
+                        return (<Link to={`/details/${categorie.id}`}><li>{categorie.name}</li></Link>)
+                    }
+                )}
             </ul>
         </>
     )
