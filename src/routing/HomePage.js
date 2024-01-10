@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 
-const HomePage = ({ categories }) => {
+const HomePage = () => {
+
+    const categories = [
+        { id: 1, name: 'Meneur'},
+        { id: 2, name: 'Arrière'},
+        { id: 3, name: 'Pivot'}
+    ];
     
     return (
         <>

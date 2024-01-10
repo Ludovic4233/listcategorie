@@ -1,10 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
-import DetailPage from './DetailPage';
-import ListCategories from '../component/ListCategories';
+import HomePage from './HomePage';
 import DetailsCategories from '../component/DetailsCategories';
 
 const router = createBrowserRouter([
-    {path: '/', element: <ListCategories />},
+    {path: '/', element: <HomePage />},
     {path: '/details/:id', element: <DetailsCategories />}
 ]);
 
